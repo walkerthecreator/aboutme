@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body{
+    background-color: #f8f6f3;
+    font-family: 'Poppins', sans-serif;
+}
+p::selection{
+    color: black;
+    background-color: #fff7a0;
+}
+main{
+    width: 45%;
+    margin: 25vh auto;
+}
+h2{
+    font-family: 'poppins';
+    font-weight: 500;
+}
+
+img{
+   border-radius: 16px; 
+   height: 550px;
+   width: 400px;
+   object-fit: cover;
+   filter: saturate(0.6);
+   transition: 0.2s;
+}
+
+img:hover{
+    transform:translateY(-2px) ;
+}
+
+
+span:hover{
+    background-color: #fff7a0;
+}
+
+.main-head{
+    display: flex;
+    color: rgb(0,0,0,0.6);
+    justify-content: space-between;
+}
+
+.main-head p{
+    font-size:20px;
+    width: 60%;
+    padding: 20px;
+}
+
+.main-body{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+}
+
+.main-body > div {
+    width: 30%;
+    margin: 10px 0px;
+    font-size: 15px;
+}
+.main-body p{
+    color: rgb(0,0,0,0.6);
+    width: 80%;
+}
+
+.main-body-first{
+    width: 65%;
+}
+
+
+.contact-div p{
+    font-size: 13px;
+    margin: 0;
+    color: rgb(0,0,0,0.6);
+} 
+
+.contact-div h2{
+    font-size: 24px;;
+}
+
+.dark{
+    color: black;
+    font-weight: 500;
+}
+
+footer{
+    text-align: center;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+footer h2{
+    font-size: 24px;
+    text-align: left;
+    margin-left: 5vw;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 10vh auto;
+}
+
+.footer-div{
+    width: 140px;
+    margin: 0 30px;
+}
+
+
+
+.footer-container img{
+    width: 120px;
+    height: 120px;
+}
+
+
+
+.footer-div img{
+    object-fit: contain;
+}
+
+
+.footer-container p{
+    font-size: 14px;
+}
+
+footer > p{
+    font-size :14px ;
+}
+
+@media (max-width:850px){
+
+    main{
+        width: 80vw;
+        margin: 10px auto;
+    }
+    .main-head{
+        flex-direction: column;
+        }
+
+    .main-head p{
+        width: 70vw;
+    }
+
+    .main-head img{
+        width: 120vw;
+        margin: 0;
+        position: relative;
+        right:100px;
+        bottom:40px ;
+    }
+
+    .main-body{
+        flex-direction: column;
+    }
+
+    .main-body > div{
+        width: 80vw;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-div {
+        margin:  20px 0;
+    }
+
+
+} 
+
+
+@media (max-width:1500px) {
+
+    .main-head{
+        width: 80vw;
+    }
+
+    main{
+        width: 90vw;
+    }
+}
+
